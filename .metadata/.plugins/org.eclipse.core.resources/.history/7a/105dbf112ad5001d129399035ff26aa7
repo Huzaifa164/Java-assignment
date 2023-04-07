@@ -1,0 +1,20 @@
+package assignment_1;
+import java.util.Scanner;
+
+public class q3 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter principal amount:");
+		int principal = scn.nextInt();
+		System.out.println("Enter rate of interest:");
+		int rateOfInterest = scn.nextInt();
+		System.out.println("Enter the time period in years:");
+		int timePeriod = scn.nextInt();
+		System.out.println("Enter the number of times interest applied per year:");
+		int numberOfTimes = scn.nextInt();
+		double finalAmount = principal * (double)(Math.pow(1+(rateOfInterest/numberOfTimes), numberOfTimes*timePeriod));
+		System.out.println(finalAmount);
+		double compoundInterest = finalAmount - principal;
+		System.out.println("The compound interest is " + compoundInterest);
+	}
+}

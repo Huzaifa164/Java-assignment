@@ -1,0 +1,16 @@
+package assignment_1;
+
+public class q9 {
+	public static void main(String args[]) {
+		byte byteInt;
+		short shortInt;
+		int number;
+		long longInt;
+		char character;
+		float floatingPoint;
+		double decimal;
+		boolean bools;
+		System.out.println("byte: " + byteInt);
+		System.out.println("short: " + shortInt);
+	}
+}
