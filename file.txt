@@ -1,0 +1,176 @@
+1)
+public class hello_world {
+	public static void main(String args[]) {
+		System.out.println("Hello World");
+	}
+}
+
+2)
+import java.util.Scanner;
+
+public class q2 {
+	
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter first number:");
+		int num1 = scn.nextInt();
+		System.out.println("Enter second number:");
+		int num2 = scn.nextInt();
+		int sum = num1 + num2;
+		System.out.println("The sum is " + sum);
+	}
+}
+
+3)
+public class q3 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter principal amount:");
+		double principal = scn.nextInt();
+		System.out.println("Enter rate of interest:");
+		double rateOfInterest = scn.nextInt();
+		System.out.println("Enter the time period in years:");
+		double timePeriod = scn.nextInt();
+		double finalAmount = principal * ((int)Math.pow(1+(rateOfInterest/100), timePeriod));
+		System.out.println(finalAmount);
+		double compoundInterest = finalAmount - principal;
+		System.out.println("The compound interest is " + compoundInterest);
+	}
+}
+
+4)
+import java.util.Scanner;
+
+public class q4 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int number = scn.nextInt();
+		System.out.println("Enter the power:");
+		int power = scn.nextInt();
+		
+		int counter = 1;
+		int result = number;
+		while(counter < power) {
+			result *= number;
+			counter++;
+		}
+		System.out.println("The answer is " + result);
+	}
+}
+
+5)
+public class q5 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter num1:");
+		int num1 = scn.nextInt();
+		System.out.println("Enter num2:");
+		int num2 = scn.nextInt();
+		int temp = num1;
+		num1 = num2;
+		num2 = temp;
+		System.out.println("num1 = " + num1);
+		System.out.println("num2 = " + num2);
+	}
+}
+
+6)
+public class q6 {
+	public static void main() {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter length:");
+		double length = scn.nextDouble();
+		System.out.println("Enter breadth:");
+		double breadth = scn.nextDouble();
+		double area = length * breadth;
+		System.out.println("The area is " + area);
+	}
+}
+
+7)
+public class q7 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the radius:");
+		double radius = scn.nextDouble();
+		double area = (Math.PI*Math.pow(radius, 2));
+		System.out.println("Area: " + area);
+		double circumference = (2*Math.PI*radius);
+		System.out.println("Circumference: " + circumference);
+	}
+}
+
+8)
+public class q8 {
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the Character:");
+		char ch = scn.next().charAt(0);
+		System.out.println("The ASCII code is " + (int)ch);
+	}
+}
+
+9)
+public class q9 {
+	static byte byteInt;
+	static short shortInt;
+	static int number;
+	static long longInt;
+	static char character;
+	static float floatingPoint;
+	static double decimal;
+	static boolean bools;
+	public static void main(String args[]) {
+		
+		System.out.println("byte: " + byteInt);
+		System.out.println("short: " + shortInt);
+		System.out.println("int: " + number);
+		System.out.println("long: " + longInt);
+		System.out.println("char: " + character);
+		System.out.println("float: " + floatingPoint);
+		System.out.println("double: " + decimal);
+		System.out.println("boolean: " + bools);
+	}
+}
+
+10)
+public class q10 {
+	public static void main() {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter number1:");
+		int number1 = scn.nextInt();
+		System.out.println("Enter number2:");
+		int number2 = scn.nextInt();
+		number1 = number1 + number2;
+		number2 = number1 - number2;
+		number1 = number1 - number2;
+		System.out.println("number1: " + number1);
+		System.out.println("number2: " + number2);
+	}
+}
+
+11)
+public class q11 {
+	
+	public static void main(String args[]) {
+		Scanner scn = new Scanner(System.in);
+		System.out.println("Enter the nth position:");
+		int n = scn.nextInt();
+		int a = 0;
+		int b = 1;
+		for(int i = 1; i <= n; i++) {
+			if(i == 1) {
+				System.out.println(a);
+			}
+			else if(i == 2) {
+				System.out.println(b);
+			}else {
+				int c = a + b;
+				System.out.println(c);
+				a = b;
+				b = c;
+			}
+		}
+	}
+}

@@ -5,14 +5,14 @@ public class q3 {
 	public static void main(String args[]) {
 		Scanner scn = new Scanner(System.in);
 		System.out.println("Enter principal amount:");
-		double principal = scn.nextInt();
+		int principal = scn.nextInt();
 		System.out.println("Enter rate of interest:");
-		double rateOfInterest = scn.nextInt();
+		int rateOfInterest = scn.nextInt();
 		System.out.println("Enter the time period in years:");
-		double timePeriod = scn.nextInt();
-		double finalAmount = principal * ((int)Math.pow(1+(rateOfInterest/100), timePeriod));
+		int timePeriod = scn.nextInt();
+		int finalAmount = principal * ((int)Math.pow(1+(rateOfInterest/100), timePeriod));
 		System.out.println(finalAmount);
-		double compoundInterest = finalAmount - principal;
+		int compoundInterest = finalAmount - principal;
 		System.out.println("The compound interest is " + compoundInterest);
 	}
 }
